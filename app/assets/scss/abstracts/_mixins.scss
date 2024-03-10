@@ -1,0 +1,19 @@
+@use '~/assets/scss/abstracts/variables';
+
+@mixin hoover-link($color) {
+  transition: color 0.3s;
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin active-link() {
+  background-color: rgba(223, 223, 223, 0.4);
+  color: variables.$primary-black;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 20px;
+  &:hover {
+    color: variables.$primary-black;
+  }
+}

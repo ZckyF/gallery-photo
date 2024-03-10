@@ -1,0 +1,38 @@
+@use '~/assets/scss/abstracts/variables';
+.gradient-button {
+  background: linear-gradient(to right, variables.$gradient-first-color, variables.$gradient-second-color);
+  color: variables.$primary-white;
+  font-weight: bold;
+  transition: filter 0.3s;
+  letter-spacing: normal;
+  font-size: 15px;
+  &:hover {
+    // Gaya saat tombol dihover
+    filter: brightness(90%);
+  }
+}
+.join-button {
+  background-color: rgb(214, 214, 214, 0.3);
+  color: variables.$primary-white;
+  font-weight: bold;
+  transition: filter 0.3s;
+  letter-spacing: normal;
+  font-size: 15px;
+  &:hover {
+    // Gaya saat tombol dihover
+    filter: brightness(95%);
+  }
+}
+.join-button-navbar {
+  // background-color: rgb(214, 214, 214, 0.3);
+  color: variables.$primary-black;
+  border: 1px solid silver;
+  font-weight: bold;
+  transition: filter 0.3s;
+  letter-spacing: normal;
+  font-size: 15px;
+  &:hover {
+    // Gaya saat tombol dihover
+    filter: brightness(90%);
+  }
+}
